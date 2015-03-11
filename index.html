@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">      
+    </head>
+    <body>
+        <!-- ToDo list with completed and incomplete tasks -->
+        <!--Allows for adding, editing, rearranging, and deleting items -->
+        <div class="container">
+
+          <!-- Adding a New Task -->
+          <p>
+            <label for="new-task">TODO LIST DEMO</label><br /><br />
+            <input id="new-task" type="text" placeholder="Add Item">
+            <button id="add">Add</button>
+          </p>    
+
+          <!-- List of Incomplete Tasks -->
+          <p class="title1">INCOMPLETE TASKS</p>
+            <ul id="incomplete-tasks" class="sortable">
+              <li>
+                <input type="checkbox">
+                <label>Finish AngularJS Course</label>
+                <input type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+              </li>
+              <li>
+                <input type="checkbox">
+                <label>Learn Node.js</label>
+                <input type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+              </li>
+              <li class="editMode"> 
+                <input type="checkbox">
+                <label>Pay Rent</label>
+                <input type="text" value="Go Shopping">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+              </li>
+            </ul>      
+
+          <!-- List of Completed Tasks -->
+          <p class="title2">COMPLETED TASKS</p>
+            <ul id="completed-tasks" class="sortable">
+              <li>
+                <input type="checkbox" checked>
+                <label>Finish jQuery Demo</label>
+                <input type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+              </li>
+              <li>
+                <input type="checkbox" checked>
+                <label>Dentist Appointment</label>
+                <input type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+              </li>
+            </ul>   
+                 
+        </div>
+        
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
